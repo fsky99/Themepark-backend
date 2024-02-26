@@ -6,7 +6,7 @@ const themeParkSchema = new Schema(
     {
         name: String,
         location: String,
-        opening_time: Date,
+        opening_time: String,
     },
     {
         timestamps: true

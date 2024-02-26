@@ -4,9 +4,9 @@ const router = express.Router()
 const ridesCtrl = require('../controllers/ride')
 
 
-router.get('/findAllRides', ridesCtrl.findAllRide)
-router.get('/findride/:id', ridesCtrl.FindRide)
-router.post('/createride', ridesCtrl.createRide)
-router.put('/updateride/:id', ridesCtrl.updateRide)
-router.delete('/deleteride/:id', ridesCtrl.deleteRide)
+router.get('/', ridesCtrl.findAllRide)
+router.get('/:id', ridesCtrl.FindRide)
+router.post('/', ridesCtrl.createRide)
+router.put('/:id', ridesCtrl.updateRide)
+router.delete('/:id', ridesCtrl.deleteRide)
 module.exports = router

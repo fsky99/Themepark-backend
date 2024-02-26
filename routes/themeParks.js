@@ -4,9 +4,9 @@ const router = express.Router()
 const themeParksCtrl = require('../controllers/themePark')
 
 
-router.get('/findAllThemeParks', themeParksCtrl.findAllThemePark)
-router.get('/findThemePark/:id', themeParksCtrl.FindThemePark)
-router.post('/createThemePark', themeParksCtrl.createThemePark)
-router.put('/updateThemePark/:id', themeParksCtrl.updateThemePark)
-router.delete('/deleteThemePark/:id', themeParksCtrl.deleteThemePark)
+router.get('/', themeParksCtrl.findAllThemePark)
+router.get('/:id', themeParksCtrl.FindThemePark)
+router.post('/', themeParksCtrl.createThemePark)
+router.put('/:id', themeParksCtrl.updateThemePark)
+router.delete('/:id', themeParksCtrl.deleteThemePark)
 module.exports = router
