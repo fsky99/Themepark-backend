@@ -4,10 +4,12 @@ const Schema = mongoose.Schema
 
 const rideSchema = new Schema(
   {
-    type: String,
+    name: String,
     ageLimit: Number,
+    thrill:String,
     description: String,
-    themeParkId: String
+    image: String ,
+    themeParkId: [{ type: Schema.Types.ObjectId, ref: 'themeParkId' }]
   },
   {
     timestamps: true
