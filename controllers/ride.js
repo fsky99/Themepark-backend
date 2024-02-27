@@ -1,5 +1,5 @@
 const Ride = require('../models/ride')
-
+const ThemePark = require('../models/themePark')
 module.exports = {
     findAllRide,
     FindRide,
@@ -21,7 +21,11 @@ async function FindRide(req, res) {
 // create Ride
 async function createRide(req, res) {
     try {
-        await Ride.create(req.body)
+        const  ride = await Ride.create(req.body)
+        const themeParkId = req.body.themeParkId
+        const themePark = await ThemePark.findById(themeParkId)
+        themePark.ridesIds.push(ride.id)
+        await themePark.save()
         res.send('Ride Created')
     } catch (err) {
         console.log('This is the error!!!' + err)

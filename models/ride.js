@@ -9,7 +9,7 @@ const rideSchema = new Schema(
     thrill:String,
     description: String,
     image: String ,
-    themeParkId: [{ type: Schema.Types.ObjectId, ref: 'themeParkId' }]
+    themeParkId: [{ type: Schema.Types.ObjectId, ref: 'ThemePark' }]
   },
   {
     timestamps: true
