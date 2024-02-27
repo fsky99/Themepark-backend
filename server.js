@@ -1,5 +1,7 @@
 let express = require("express")
 let path = require("path")
+const cors = require('cors')
+
 let cookieParser = require("cookie-parser")
 let logger = require("morgan")
 require("dotenv").config()
@@ -10,7 +12,7 @@ let rideRouter = require('./routes/rides')
 
 let app = express()
 
-
+app.use(cors())
 app.use(logger("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
