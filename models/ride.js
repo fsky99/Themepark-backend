@@ -7,6 +7,7 @@ const rideSchema = new Schema(
     type: String,
     ageLimit: Number,
     description: String,
+    themeParkId: String
   },
   {
     timestamps: true
