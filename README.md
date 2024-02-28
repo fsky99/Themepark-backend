@@ -50,7 +50,6 @@ async function createRide(req, res) {
 ---
 ### Future plans:
 
-- [ ] Improve the design.
 - [ ] Add more functionalities.
 ---
 ### **_Credits_**
