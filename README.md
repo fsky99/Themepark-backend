@@ -48,13 +48,12 @@ async function createRide(req, res) {
 }
 ```
 ---
-### **_Credits_**
-
-##### Drawio: [Draw](https://app.diagrams.net/)
-
----
 ### Future plans:
 
 - [ ] Improve the design.
 - [ ] Add more functionalities.
+---
+### **_Credits_**
+
+##### Drawio: [Draw](https://app.diagrams.net/)
 
