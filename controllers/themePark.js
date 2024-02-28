@@ -7,6 +7,7 @@ module.exports = {
   updateThemePark,
   deleteThemePark,
 }
+
 //find all theme parks
 async function findAllThemePark(req, res) {
   const themeParks = await ThemePark.find({})
@@ -14,7 +15,7 @@ async function findAllThemePark(req, res) {
 }
 //find specific theme park
 async function FindThemePark(req, res) {
-  const themePark = await ThemePark.findById(req.params.id)
+  const themePark = await ThemePark.findById(req.params.id).populate("ridesIds");
   res.send(themePark)
 }
 
