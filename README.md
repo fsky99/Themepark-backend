@@ -9,7 +9,7 @@
 Theme Parks is a website where the user can view theme parks and their rides. with the option of deleting and updating rides and them parks.
 
 ---
-### **Frontend Repo Link:_**
+### **Frontend Repo Link:**
 #####  Link: [Frontend](https://github.com/Ali000/Themepark)
 ---
 ### Screenshots:
